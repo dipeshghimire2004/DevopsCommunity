@@ -15,7 +15,7 @@ const Hero = () => {
           className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.8 }} 
         >
           {SITE_CONTENT.hero.title}
         </motion.h1>

@@ -1,3 +1,9 @@
+import img1 from "../../../public/images/devopslogo.png";
+import img2 from "../../../public/images/devfest.png";
+import img3 from "../../../public/images/devcorps.png";
+import img4 from "../../../public/images/image.png";
+// import kshitiz from "../../../public/images/hero.jpg";
+
 export interface Event {
   id: string;
   title: string;
@@ -33,20 +39,21 @@ export const SITE_CONTENT = {
       "DevOps Pioneer Community is a vibrant student-led group dedicated to mastering DevOps practices. We empower students to learn, share, and build innovative solutions, shaping the future of software development and operations.",
   },
   events: {
-    title: "Upcoming Events",
+    title: " Events",
     items: [
       {
         id: "event1",
-        title: "DevOps Workshop",
+        title: "Docker Reimagined",
         date: "Sept 10, 2025",
-        description: "Master CI/CD pipelines and automation tools.",
+        description: "Master Dockerization.",
         image: "/images/dipesh.jpg",
       },
       {
         id: "event2",
         title: "Cloud Hackathon",
-        date: "Oct 15, 2025",
-        description: "Build real-world cloud-native projects.",
+        date: "Aug 25, 2025",
+        description:
+          "Build real-world impactful project for edcational sector, cloud-native projects.",
         image: "/images/dipesh.jpg",
       },
     ] as Event[],
@@ -57,30 +64,16 @@ export const SITE_CONTENT = {
       {
         id: "member1",
         name: "Dipesh Shrestha",
-        role: "DevOps Expert",
+        role: "DevCorps Head",
         category: "Mentor",
-        image: "/images/dipesh.jpg",
+        image: "/images/dipeshsir.jpg",
       },
       {
         id: "member7",
-        name: "Dr. Sarah Lee",
-        role: "DevOps Expert",
+        name: "Kshitiz Bhujel",
+        role: "ING Mento",
         category: "Mentor",
-        image: "/images/hero.jpg",
-      },
-      {
-        id: "member7",
-        name: "Dr. Sarah Lee",
-        role: "DevOps Expert",
-        category: "Mentor",
-        image: "/images/hero.jpg",
-      },
-      {
-        id: "member7",
-        name: "Dr. Sarah Lee",
-        role: "DevOps Expert",
-        category: "Mentor",
-        image: "/images/hero.jpg",
+        image: "/images/kshitiz.jpg",
       },
       {
         id: "member7",
@@ -98,8 +91,43 @@ export const SITE_CONTENT = {
       },
       {
         id: "member3",
-        name: "Emma Chen",
+        name: "Abhishekh Kunwar",
+        role: "Core Member : Logistic",
+        category: "Member",
+        image: "/images/abhisek.jpg",
+      },
+      {
+        id: "member3",
+        name: "Upashna Acharya",
+        role: "Core Member : Design",
+        category: "Member",
+        image: "/images/hero.jpg",
+      },
+      {
+        id: "member3",
+        name: "Krisala Reule : Design",
         role: "Core Member",
+        category: "Member",
+        image: "/images/hero.jpg",
+      },
+      {
+        id: "member3",
+        name: "Sarishma Ghimire",
+        role: "Core Member : Design",
+        category: "Member",
+        image: "/images/hero.jpg",
+      },
+      {
+        id: "member3",
+        name: "Deepti Aryal",
+        role: "Core Member : Design",
+        category: "Member",
+        image: "/images/hero.jpg",
+      },
+      {
+        id: "member3",
+        name: "Krishma Shrestha ",
+        role: "Core Member : Documentation",
         category: "Member",
         image: "/images/hero.jpg",
       },
@@ -122,4 +150,41 @@ export const NAV_LINKS = [
   { name: "Events", href: "#events" },
   { name: "Team", href: "#team" },
   { name: "Contact", href: "#contact" },
+];
+
+export const data = [
+  {
+    id: 1,
+    title: "AI-Guided Personalization",
+    description:
+      "Smart recommendations for writers and budgets tailored to you.",
+    image: img1,
+    position: "left-0 top-[5%] pr-4 desktop:pr-0",
+    align: "items-start text-left",
+  },
+  {
+    id: 2,
+    title: "Secure & Local Payments",
+    description: "Pay confidently with eSewa, Khalti, or global methods.",
+    image: img2,
+    position: "left-[25%] bottom-[0%]",
+    align: "items-center",
+  },
+  {
+    id: 3,
+    title: "Gamified Growth",
+    description: "Earn badges, track progress, and climb the leaderboard.",
+    image: img3,
+    position: "left-[53%] top-[5%]",
+    align: "items-center",
+  },
+  {
+    id: 4,
+    title: "Real-Time Collaboration",
+    description:
+      "Work with writers or clients seamlessly through live chat, comments, and version history.",
+    image: img4,
+    position: "right-0 bottom-[0%] pl-4 desktop:pl-0",
+    align: "items-end ",
+  },
 ];
