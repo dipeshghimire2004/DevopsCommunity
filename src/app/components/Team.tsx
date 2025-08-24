@@ -1,7 +1,6 @@
 "use client";
-import { SITE_CONTENT } from "../constants";
 import Card from "./Card";
-import { TeamMember } from "../constants";
+import { TeamMember, SITE_CONTENT } from "../constants";
 
 const Team = () => {
   const groupedTeam = SITE_CONTENT.team.members.reduce(

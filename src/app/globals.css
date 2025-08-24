@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #025a74;
+  --secondary: #02480c;
 }
 
 @theme inline {
@@ -24,4 +26,14 @@ body {
   color: var(--foreground);
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
+}
+/* Parallelogram clip-path for the first card */
+.clip-parallelogram {
+  clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+}
+
+/* Notch shape for the second card (like a speech bubble or custom cut) */
+.clip-notch {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 90% 100%, 0% 100%);
+  position: relative;
 }

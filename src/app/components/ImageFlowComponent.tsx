@@ -64,7 +64,7 @@ const ImageFlowComponent = () => {
                 <Image
                   src={step.image}
                   alt={`Step ${step.id}`}
-                  className={`w-36 min-h-36 desktop:min-w-44 desktop:min-h-44 rounded-full bg-cover border-8 border-secondary transition-all duration-700 z-10 ${
+                  className={`w-36 min-h-36 desktop:min-w-44 desktop:min-h-44 bg-white rounded-full bg-contain border-8 border-green-800 transition-all duration-700 z-10 ${
                     activeIndex >= index ? "grayscale-0" : "grayscale"
                   }`}
                 />
@@ -74,7 +74,7 @@ const ImageFlowComponent = () => {
                 <Image
                   src={step.image}
                   alt={`Step ${step.id}`}
-                  className={`w-36 min-h-36 desktop:w-44 desktop:min-h-44 rounded-full border-8 border-secondary bg-cover transition-all duration-700 z-10 ${
+                  className={`w-36 min-h-36 desktop:w-44  bg-white desktop:min-h-44 rounded-full object-contain border-8 border-secondary bg-cover transition-all duration-700 z-10 ${
                     activeIndex >= index ? "grayscale-0" : "grayscale"
                   }`}
                 />
