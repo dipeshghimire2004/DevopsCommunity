@@ -1,6 +1,6 @@
 "use client";
 import { motion, Variants } from "framer-motion";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { SITE_CONTENT } from "../constants";
 
 // Video and image paths
@@ -153,6 +153,21 @@ const Hero: React.FC = () => {
   const titleLetters = SITE_CONTENT.hero.title.split("");
   const subtitleLetters = SITE_CONTENT.hero.subtitle.split("");
 
+  const [screenSize, setScreenSize] = useState({ width: 1000, height: 1000 });
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setScreenSize({ width: window.innerWidth, height: window.innerHeight });
+
+      // optional: update on resize
+      const handleResize = () =>
+        setScreenSize({ width: window.innerWidth, height: window.innerHeight });
+      window.addEventListener("resize", handleResize);
+
+      return () => window.removeEventListener("resize", handleResize);
+    }
+  }, []);
+
   return (
     <section
       id="hero"
@@ -165,16 +180,12 @@ const Hero: React.FC = () => {
             key={i}
             className="absolute w-2 h-2 bg-white/10 rounded-full"
             initial={{
-              x: Math.random() * window.innerWidth,
-              y: Math.random() * window.innerHeight,
+              x: Math.random() * screenSize.width,
+              y: Math.random() * screenSize.height,
             }}
             animate={{
-              x:
-                Math.random() *
-                (typeof window !== "undefined" ? window.innerWidth : 1000),
-              y:
-                Math.random() *
-                (typeof window !== "undefined" ? window.innerHeight : 1000),
+              x: Math.random() * screenSize.width,
+              y: Math.random() * screenSize.height,
             }}
             transition={{
               duration: Math.random() * 20 + 10,
