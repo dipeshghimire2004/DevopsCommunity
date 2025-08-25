@@ -98,10 +98,10 @@ export const SITE_CONTENT = {
       },
       {
         id: "member7",
-        name: "Krisala Reule : Design",
-        role: "Core Member",
+        name: "Krisala Reule",
+        role: "Core Member : Design",
         category: "Member",
-        image: "/images/hero.jpg",
+        image: "/images/krishala.jpg",
       },
       {
         id: "member8",
