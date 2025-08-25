@@ -33,7 +33,7 @@ const sliderSettings = {
 
 const Events = () => {
   return (
-    <section id="events" className="py-20 bg-white text-black">
+    <section id="events" className="py-20 mb-20px bg-white text-black">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl sm:text-4xl font-bold text-primary text-center mb-10">
           {SITE_CONTENT.events.title}

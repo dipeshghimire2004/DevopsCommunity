@@ -273,7 +273,14 @@ const Hero: React.FC = () => {
               whileHover={{ x: "100%" }}
               transition={{ duration: 0.6 }}
             />
-            <span className="relative z-10">{SITE_CONTENT.hero.cta}</span>
+            <a
+              href="https://www.instagram.com/heralddevcorps.devops?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:underline"
+            >
+              <span className="relative z-10">{SITE_CONTENT.hero.cta}</span>
+            </a>
           </motion.button>
         </div>
 

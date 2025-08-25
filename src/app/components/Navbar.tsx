@@ -111,7 +111,7 @@ const Navbar: React.FC = () => {
               transition={{ duration: 0.3 }}
             >
               <Image
-                src="/logo.png"
+                src="/images/devcorps.png"
                 alt="DevOps logo"
                 width={60}
                 height={70}

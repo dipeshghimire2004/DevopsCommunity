@@ -38,6 +38,9 @@ jobs:
         run: |
           npm run build   # Builds Next.js
 
+      - name: Test docker build
+        run: docker build -t test-build .
+
       # Step 5: Debugging - list some generated files, total count, and size
       - name: List generated files
         run: |

@@ -30,7 +30,7 @@ export const SITE_CONTENT = {
   hero: {
     title: "DevOps Pioneer Community",
     subtitle: "Innovate, Collaborate, Pioneer!",
-    cta: "Join Us",
+    cta: "Get Connected",
     backgroundImage: "/images/hero.jpg",
   },
   about: {
@@ -46,16 +46,16 @@ export const SITE_CONTENT = {
         title: "Docker Reimagined",
         date: "Sept 10, 2025",
         description: "Master Dockerization.",
-        image: "/images/dipesh.jpg",
+        image: "/dockerpost.png",
       },
-      {
-        id: "event2",
-        title: "Cloud Hackathon",
-        date: "Aug 25, 2025",
-        description:
-          "Build real-world impactful project for edcational sector, cloud-native projects.",
-        image: "/images/dipesh.jpg",
-      },
+      // {
+      //   id: "event2",
+      //   title: "Cloud Hackathon",
+      //   date: "Aug 25, 2025",
+      //   description:
+      //     "Build real-world impactful project for edcational sector.",
+      //   image: "/images/dipesh.jpg",
+      // },
     ] as Event[],
   },
   team: {
@@ -97,13 +97,6 @@ export const SITE_CONTENT = {
         image: "/images/abhisek.jpg",
       },
       {
-        id: "member6",
-        name: "Upashna Acharya",
-        role: "Core Member : Design",
-        category: "Member",
-        image: "/images/hero.jpg",
-      },
-      {
         id: "member7",
         name: "Krisala Reule : Design",
         role: "Core Member",
@@ -122,14 +115,14 @@ export const SITE_CONTENT = {
         name: "Deepti Aryal",
         role: "Core Member : Design",
         category: "Member",
-        image: "/images/hero.jpg",
+        image: "/images/deepti.jpg",
       },
       {
         id: "member10",
         name: "Krishma Shrestha ",
         role: "Core Member : Documentation",
         category: "Member",
-        image: "/images/hero.jpg",
+        image: "/images/krishma.jpg",
       },
     ] as TeamMember[],
   },
@@ -155,34 +148,36 @@ export const NAV_LINKS = [
 export const data = [
   {
     id: 1,
-    title: "AI-Guided Personalization",
+    title: "Who We Are",
     description:
-      "Smart recommendations for writers and budgets tailored to you.",
+      "DevOps Pioneer is a student-led community that brings together passionate learners and professionals to explore DevOps practices, tools, and culture.",
     image: img1,
     position: "left-0 top-[5%] pr-4 desktop:pr-0",
     align: "items-start text-left",
   },
   {
     id: 2,
-    title: "Secure & Local Payments",
-    description: "Pay confidently with eSewa, Khalti, or global methods.",
+    title: "Our Mission",
+    description:
+      "We aim to build a collaborative space where students can learn, share, and grow in DevOps through workshops, projects, and real-world practices.",
     image: img2,
     position: "left-[25%] bottom-[0%]",
     align: "items-center",
   },
   {
     id: 3,
-    title: "Gamified Growth",
-    description: "Earn badges, track progress, and climb the leaderboard.",
+    title: "What We Do",
+    description:
+      "From hands-on sessions to community events, we empower learners with skills in automation, cloud, CI/CD, containerization, and beyond.",
     image: img3,
     position: "left-[53%] top-[5%]",
     align: "items-center",
   },
   {
     id: 4,
-    title: "Real-Time Collaboration",
+    title: "Why Join Us",
     description:
-      "Work with writers or clients seamlessly through live chat, comments, and version history.",
+      "Be part of a growing network, gain practical exposure, and pioneer the DevOps culture at your campus and beyond.",
     image: img4,
     position: "right-0 bottom-[0%] pl-4 desktop:pl-0",
     align: "items-end ",

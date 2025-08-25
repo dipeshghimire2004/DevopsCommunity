@@ -18,7 +18,13 @@ const Card: React.FC<CardProps> = ({ title, subtitle, description, image }) => {
       transition={{ duration: 0.5 }}
       whileHover={{ scale: 1.005, boxShadow: "0 10px 20px rgba(0,0,0,0.2)" }}
     >
-      <Image src={image} alt={title} className="w-full h-64 object-cover" />
+      <Image
+        src={image}
+        alt={title}
+        width={300}
+        height={300}
+        className="w-full h-64 object-cover"
+      />
       <div className="p-6">
         <h3 className="text-xl font-semibold text-primary">{title}</h3>
         {subtitle && <p className="text-accent mt-1">{subtitle}</p>}
