@@ -39,7 +39,10 @@ const About = () => {
   }, []);
 
   return (
-    <section className="px-12 tab-port:px-7.5 laptop:px-17.5 lg-desktop:px-30 py-8 bg-white text-black">
+    <section
+      id="about"
+      className="px-12 tab-port:px-7.5 laptop:px-17.5 lg-desktop:px-30 py-8 bg-white text-black"
+    >
       <SectionHeading>About Us</SectionHeading>
       {isMobileView ? <VerticalSlider /> : <ImageFlowComponent />}
     </section>

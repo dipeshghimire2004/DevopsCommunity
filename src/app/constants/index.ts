@@ -115,7 +115,7 @@ export const SITE_CONTENT = {
         name: "Sarishma Ghimire",
         role: "Core Member : Design",
         category: "Member",
-        image: "/images/hero.jpg",
+        image: "/images/sarishma.jpg",
       },
       {
         id: "member9",
