@@ -38,7 +38,7 @@ const ImageFlowComponent = () => {
     return () => {
       tl.kill();
     };
-  }, []);
+  });
 
   return (
     <div className="relative w-full h-[400px] desktop:h-[500px] pt-8">

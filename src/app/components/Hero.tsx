@@ -1,5 +1,5 @@
 "use client";
-import { motion, AnimatePresence, Variants } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { useState, useRef } from "react";
 import { SITE_CONTENT } from "../constants";
 
