@@ -37,7 +37,6 @@ jobs:
       - name: Build and export static site
         run: |
           npm run build   # Builds Next.js
-          npm run export  # Exports static site (creates 'out' folder)
 
       # Step 5: Debugging - list some generated files, total count, and size
       - name: List generated files
